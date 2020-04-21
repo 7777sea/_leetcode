@@ -1,0 +1,7 @@
+*
+!.gitignore
+!index.html
+!ssoLogin.html
+!favicon.ico
+!config
+!config/ENV.js

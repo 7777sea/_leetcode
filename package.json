@@ -1,0 +1,52 @@
+{
+  "name": "dosm-automation-web",
+  "version": "1.0.0",
+  "author": "DOSM前端开发团队",
+  "description": "dosm-automation-web",
+  "main": "src/index",
+  "scripts": {
+    "dev": "node ./scripts/dev.js",
+    "build": "node ./scripts/build.js",
+    "trans": "atool-l10n"
+  },
+  "files": [
+    "src/components",
+    "package.json"
+  ],
+  "dependencies": {
+    "antd": "^4.0.4",
+    "axios": "^0.19.2",
+    "core-js": "^3.4.1",
+    "deepmerge": "^3.2.0",
+    "is-equal": "^1.5.5",
+    "js-cookie": "^2.2.0",
+    "locallyjs": "^0.3.3",
+    "mobx": "^5.15.1",
+    "mobx-react-lite": "^1.5.2",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-intl": "^3.9.2",
+    "react-router-dom": "^5.1.2",
+    "rxjs": "^6.5.3",
+    "styled-jsx": "^3.2.4"
+  },
+  "devDependencies": {
+    "atool-l10n": "^0.4.0",
+    "babel-plugin-react-intl": "^5.1.11",
+    "rimraf": "^3.0.0",
+    "scheduler": "^0.17.0",
+    "styled-jsx-plugin-sass": "^1.0.0",
+    "webpack-pipe": "^1.0.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.cloudwise.com/DOSM/dosm-automation-web"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://git.cloudwise.com/DOSM/dosm-automation-web/issues"
+  },
+  "homepage": "https://git.cloudwise.com/DOSM/dosm-automation-web"
+}
