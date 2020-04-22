@@ -1,8 +1,8 @@
 {
-  "name": "dosm-automation-web",
+  "name": "react-mint-cli",
   "version": "1.0.0",
-  "author": "DOSM前端开发团队",
-  "description": "dosm-automation-web",
+  "author": "leo.liu",
+  "description": "react-mint-cli",
   "main": "src/index",
   "scripts": {
     "dev": "node ./scripts/dev.js",
@@ -42,11 +42,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.cloudwise.com/DOSM/dosm-automation-web"
+    "url": "https://github.com/7777sea/_leetcode"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://git.cloudwise.com/DOSM/dosm-automation-web/issues"
+    "url": "https://github.com/7777sea/_leetcode/issues"
   },
-  "homepage": "https://git.cloudwise.com/DOSM/dosm-automation-web"
+  "homepage": "https://github.com/7777sea/_leetcode"
 }
