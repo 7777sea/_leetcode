@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { helper } from '@/utils/T';
+import DataStructure from './leetcode/DataStructure4-29';
 
 const Demo = () => {
 
@@ -16,6 +17,7 @@ const Demo = () => {
 
     return <div style={{height: '100%'}} ref={divRef}>
         <canvas ref={canvasRef}/>
+        <DataStructure />
     </div>
 }
 
