@@ -18,20 +18,31 @@ const DataStructure = () => {
     }
 
 
-    const answer = (str1='', str2='') => {
-        let result = ''
-        let tempVal = 0
-        let arr1 = str1.split('')
-        let arr2 = str2.split('')
-      
-        while (arr1.length || arr2.length || tempVal) {
-            tempVal += ~~arr1.pop() + ~~arr2.pop()
-            result = tempVal % 10 + result
-            tempVal = ~~(tempVal / 10)
-            console.log(tempVal, result)
+    const answer = (num1='', num2='') => {
+        let a = num1.length, b = num2.length, result = '', sum = 0
+        while(a || b) {
+            a ? sum += +num1[--a] : ''
+            b ? sum +=  +num2[--b] : ''
+            
+            result = sum % 10 + result
+            if(sum > 9) sum = 1
+            else sum = 0
         }
+        if (sum) result = 1 + result
+        return result
+        // let result = ''
+        // let tempVal = 0
+        // let arr1 = str1.split('')
+        // let arr2 = str2.split('')
       
-        return result.replace(/^0+/, '')
+        // while (arr1.length || arr2.length || tempVal) {
+        //     tempVal += ~~arr1.pop() + ~~arr2.pop()
+        //     result = tempVal % 10 + result
+        //     tempVal = ~~(tempVal / 10)
+        //     console.log(tempVal, result)
+        // }
+      
+        // return result.replace(/^0+/, '')
     }
 
     const a = answer("111", '22222')
