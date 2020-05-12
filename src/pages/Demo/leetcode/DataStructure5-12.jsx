@@ -3,19 +3,19 @@ import React, { useEffect } from 'react';
 const DataStructure = () => {
     
     const problem = () => {
-        return `给定一个二叉树，返回它的 前序 遍历。
+        return `给定一个二叉树，返回它的 中序 遍历。
 
         示例:
-       
-       输入: [1,null,2,3]  
-          1
-           \
-            2
-           /
-          3 
-       
-       输出: [1,2,3]
-       进阶: 递归算法很简单，你可以通过迭代算法完成吗？`
+        
+        输入: [1,null,2,3]
+           1
+            \
+             2
+            /
+           3
+        
+        输出: [1,3,2]
+        进阶:  递归算法很简单，你可以通过迭代算法完成吗？`
     }
 
     /**
@@ -30,13 +30,17 @@ const DataStructure = () => {
      * @return {number[]}
      */
     const answer = (root) => {
-        let stack = [root]
         let arr = []
-        while (stack.length > 0) {
-            let node = stack.pop();
-            node && arr.push(node.val); // node不为空时，向arr中推入节点值
-            node && node.right && stack.push(node.right); // 模拟栈，所以先压右节点
-            node && node.left && stack.push(node.left); // 后入先出，后压左节点
+        let stackArr = []
+        while(root!=null || stackArr.length!=0){
+
+            while(root!=null){
+                stackArr.push(root)
+                root = root.left
+            }
+            root = stackArr.pop()
+            arr.push(root.val)
+            root = root.right
         }
         return arr
     }
