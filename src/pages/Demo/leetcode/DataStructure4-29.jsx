@@ -11,6 +11,23 @@ const DataStructure = () => {
         `
     }
 
+    // function add(){
+
+    //     let _args = [].slice.call(arguments);
+    
+    //     function _adder(){
+    //         _args.push(...arguments);
+    //         return _adder;
+    //     }
+    
+    //     _adder.toString = function(){
+    //         return _args.reduce((a, b) => a + b)
+    //     }
+    
+    //     return _adder
+    
+    // }
+
     function add() {
         // 第一次执行时，定义一个数组专门用来存储所有的参数
         var _args = [].slice.call(arguments);
