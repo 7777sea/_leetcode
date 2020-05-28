@@ -7,7 +7,7 @@ const { doBuild, pipe, tool} = require("webpack-pipe");
 
 const buildPath = path.resolve(__dirname, "../build");
 doBuild(mkWebpackConfig([pipe.production, pipe.autoDllReactPlugin]), {
-    proxyPath: "/dosm/",
+    proxyPath: "/",
     buildPath: buildPath,
     isCreateIndexHtml: false,
     buildStart: async () => {

@@ -45,7 +45,6 @@ const formatLeftMenu = (menus, currentUrl) => menus.map((val, index) => {
 });
 
 const MenuLeft = ({leftMenu, currentUrl, updateCollapsed}) => {
-    //配置中取是否显示DOSM的LOGO,用于区分是否嵌入DOCP
     const { isEmbedDOCP } = EnumEnv;
     return (
         <LayoutCtx.Consumer>

@@ -30,7 +30,7 @@ import { localStore, checkType, Cookies } from '@/utils/T';
  */
 class Permission {
     constructor() {
-        this.loginInfoKey = "dosm_loginInfo";
+        this.loginInfoKey = "loginInfo";
         this._cacheLoginInfo = null;
     }
 
