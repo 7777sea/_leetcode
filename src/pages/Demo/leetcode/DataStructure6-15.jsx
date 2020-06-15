@@ -14,7 +14,7 @@ const DataStructure = () => {
     }
 
 
-    function getParams() {
+    function getParams(u) {
         const s = new URLSearchParams(u.search)
         const obj = {}
         s.forEach((v, k) => (obj[k] = v))
@@ -23,6 +23,13 @@ const DataStructure = () => {
     
     const url = 'http://sample.com/?a=1&b=2&c=xx&d=2#hash';
     getParams(new URL(url))
+
+    const parse = (url) => {
+        const l = new URL(url).searchParams;
+        const _params = {};
+        l.forEach((k,v) => _params[k] = v);
+       return _params
+    } 
 
     return <div className='dataStructure'>   
         
