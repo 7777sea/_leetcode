@@ -27,7 +27,7 @@ const DataStructure = () => {
     const parse = (url) => {
         const l = new URL(url).searchParams;
         const _params = {};
-        l.forEach((k,v) => _params[k] = v);
+        l.forEach((v,k) => _params[k] = v);
        return _params
     } 
 
