@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { helper } from '@/utils/T';
-import DataStructure from './leetcode/DataStructure5-25';
+import DataStructure from './leetcode/DataStructure7-6';
 
 const Demo = () => {
 
